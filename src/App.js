@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+import React from "react";
+import TableHead from "./components/TableHead";
+import TableBody from "./components/TableBody";
+import TableFoot from "./components/TableFoot";
 
 function App() {
   return (
-    <div>
-      <h1>Tabela de livros</h1>
-    </div>
+      <table className="tabela">
+          <TableHead/>
+          <TableBody/>
+          <TableFoot/>
+      </table>
   );
 }
 
